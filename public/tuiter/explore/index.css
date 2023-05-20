@@ -21,19 +21,55 @@
 }
 
 .search-width {
+  margin: 5px;
+  margin-left: 30px;
   padding-left: 40px;
   width: 1300px;
   height: 30px;
   background-color: lightgrey;
-  background-image: url("public/labs/a1/teslabot.jpg");
+  color: darkgrey;
 }
 
 .icon-padding {
-  padding-left: 15px;
+  margin: 5px;
+  padding-left: 5px;
 }
 
 .icon-padding-left {
+  margin: 5px;
+  margin-left: 30px;
   position: absolute;
   left: 150px;
   top: 25px;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+  height: 100px;
+}
+
+.float-done {
+  clear: both;
+}
+
+.remove-bullets {
+  list-style-type: none;
+}
+
+.display-horizontally {
+  float: left;
+  margin-right: 200px;
+  font-size: 20px;
+}
+
+.underline {
+  margin-top: 3px;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: blue;
 }
