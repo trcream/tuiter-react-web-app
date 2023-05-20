@@ -73,3 +73,53 @@
   height: 2px;
   background-color: blue;
 }
+
+.image-sizing {
+  max-width: 100%;
+}
+
+.pos-relative-nudge-right {
+  position: relative;
+  bottom: 30px;
+  left: 130px;
+  color: white;
+}
+
+.pos-relative {
+  position: relative;
+}
+
+.float-left {
+  float: left;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-text {
+  position: absolute;
+  color: white;
+  font-size: 25px;
+  bottom: 10px;
+  left: 10px;
+}
+
+.tuit-styling {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.tuit-text-grey {
+  padding-top: 5px;
+  color: grey;
+  font-size: 15px;
+}
+.tuit-text-bold {
+  padding-top: 5px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.tuit-icon {
+  margin-left: 875px;
+}
