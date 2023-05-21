@@ -1,5 +1,5 @@
 .wd-bookmark-icon {
-  margin-left: 350px;
+  margin-left: 400px;
 }
 
 .grid-col-third-page {
@@ -36,4 +36,20 @@
 .wd-span-padding {
   display: inline-block;
   padding: 10px;
+}
+
+.wd-tuit-text-bold {
+  font-weight: bold;
+}
+
+.wd-icon-padding-left {
+  padding-left: 15px;
+}
+
+.wd-icon-padding-left-large {
+  padding-left: 40px;
+}
+
+.wd-ellipse-padding {
+  padding-left: 170px;
 }
