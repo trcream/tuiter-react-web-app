@@ -1,0 +1,39 @@
+.wd-bookmark-icon {
+  margin-left: 350px;
+}
+
+.grid-col-third-page {
+  width: 100;
+  float: left;
+}
+
+.grid-col-two-thirds-page {
+  width: 500px;
+  float: left;
+}
+
+.rounded-corners-all-around {
+  border: 1px solid lightgray;
+  border-radius: 25px;
+}
+
+.wd-padding-general {
+  padding: 12px;
+}
+
+.wd-padding-general-left {
+  padding-left: 12px;
+}
+
+.wd-padding-bookmark {
+  padding-left: 125px;
+}
+
+.wd-rounded-image {
+  border-radius: 25px;
+}
+
+.wd-span-padding {
+  display: inline-block;
+  padding: 10px;
+}
