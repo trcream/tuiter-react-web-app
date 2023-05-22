@@ -127,3 +127,11 @@
 .wd-padding-general {
   padding: 15px;
 }
+
+.wd-tuit-grey {
+  color: grey;
+}
+.wd-tuit-bold {
+  font-weight: bold;
+  font-size: 20px;
+}
