@@ -139,3 +139,11 @@
 .wd-bold-text {
   font-weight: bold;
 }
+
+.wd-search-margin-left {
+  margin-left: 10px;
+}
+
+.wd-search-margin-top {
+  margin-top: 12px;
+}
