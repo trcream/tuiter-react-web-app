@@ -19,60 +19,73 @@
   <body>
     <div class="container text-left">
       <div class="row p-3">
-        <div class="col-2">
+        <!-- Responsive columns -->
+        <div class="col-xxl-2 col-xl-2 col-lg-1 col-md-2 col-sm-3">
           <div class="list-group">
-            <a href="#" class="list-group-item list-group-item-action">
+            <a
+              href="#"
+              class="list-group-item list-group-item-action d-lg-flex"
+            >
               <i class="fa-brands fa-twitter float-left"></i>
             </a>
             <a
               href="/tuiter/home.html"
               class="list-group-item list-group-item-action"
             >
-              <i class="fa-solid fa-house"></i> Home</a
+              <i class="fa-solid fa-house"></i>
+              <span class="d-none d-xl-inline"> Home</span></a
             >
             <a
               href="/tuiter/explore/index.html"
               class="list-group-item list-group-item-action active"
-              ># Explore</a
+            >
+              <i class="fa-solid fa-hashtag"></i>
+              <span class="d-none d-xl-inline"> Explore</span></a
             >
             <a
               href="/tuiter/notifications.html"
               class="list-group-item list-group-item-action"
-              ><i class="fa-solid fa-bell"></i> Notifications</a
+              ><i class="fa-solid fa-bell"></i>
+              <span class="d-none d-xl-inline"> Notifications</span></a
             >
             <a
               href="/tuiter/messages.html"
               class="list-group-item list-group-item-action"
-              ><i class="fa-solid fa-envelope"></i> Messages</a
+              ><i class="fa-solid fa-envelope"></i>
+              <span class="d-none d-xl-inline"> Messages</span></a
             >
             <a
               href="/tuiter/bookmarks.html"
               class="list-group-item list-group-item-action"
-              ><i class="fa-solid fa-bookmark"></i> Bookmarks</a
+              ><i class="fa-solid fa-bookmark"></i>
+              <span class="d-none d-xl-inline"> Bookmarks</span></a
             >
             <a
               href="/tuiter/lists.html"
               class="list-group-item list-group-item-action disabled"
-              ><i class="fa-solid fa-list"></i> Lists</a
+              ><i class="fa-solid fa-list"></i>
+              <span class="d-none d-xl-inline"> Lists</span></a
             >
             <a
               href="/tuiter/profile.html"
               class="list-group-item list-group-item-action"
-              ><i class="fa-solid fa-user"></i> Profile</a
+              ><i class="fa-solid fa-user"></i>
+              <span class="d-none d-xl-inline"> Profile</span></a
             >
             <a href="#" class="list-group-item list-group-item-action"
-              ><i class="fa-solid fa-ellipsis"></i> More</a
+              ><i class="fa-solid fa-ellipsis"></i>
+              <span class="d-none d-xl-inline"> More</span></a
             >
           </div>
           <div class="d-grid gap-2">
-            <button type="button" class="btn btn-primary rounded-pill">
+            <button type="button" class="btn btn-primary rounded-pill w-150">
               Tuit
             </button>
           </div>
         </div>
 
         <!-- start of middle column -->
-        <div class="col-6">
+        <div class="col-xxl-6 col-xl-6 col-lg-7 col-md-10 col-sm-9">
           <div class="d-grid gap-2">
             <form>
               <div class="input-group mb-3 position-relative">
@@ -86,7 +99,12 @@
                     class="fa-solid fa-magnifying-glass wd-search-margin-left wd-search-margin-top"
                   ></i>
                 </span>
-                <span class="mt-2 mx-1"><i class="fa-solid fa-gear"></i></span>
+                <span class="mt-2 mx-1"
+                  ><i
+                    class="fa-solid fa-gear"
+                    style="font-size: 24px; color: rgb(30, 131, 202)"
+                  ></i>
+                </span>
               </div>
             </form>
           </div>
@@ -137,6 +155,8 @@
                     <br />
                     React is a free and open-source front-end JavaScript library
                     for building user interfaces based on components.
+                    <br />
+                    <span class="wd-grey-text">124k Tweets</span>
                   </div>
                   <div class="col-2">
                     <img
@@ -161,6 +181,8 @@
                     language. Its design philosophy emphasizes code readability
                     with the use of significant indentation via the off-side
                     rule.
+                    <br />
+                    <span class="wd-grey-text">14k Tweets</span>
                   </div>
                   <div class="col-2">
                     <img
@@ -184,6 +206,8 @@
                     Structured Query Language, is a domain-specific language
                     used in programming and designed for managing data held in a
                     relational database management system.
+                    <br />
+                    <span class="wd-grey-text">4k Tweets</span>
                   </div>
                   <div class="col-2">
                     <img
@@ -206,6 +230,8 @@
                     <br />
                     C# is a general-purpose high-level programming language
                     supporting multiple paradigms.
+                    <br />
+                    <span class="wd-grey-text">15k Tweets</span>
                   </div>
                   <div class="col-2">
                     <img
@@ -222,7 +248,7 @@
         </div>
 
         <!-- Third column of the main page  -->
-        <div class="col-3">
+        <div class="col-xxl-3 col-xl-4 col-lg-4">
           <ul class="list-group">
             <li class="list-group-item">
               <span class="wd-bold-text">Who to follow</span>
@@ -240,7 +266,7 @@
                   </div>
                   <div class="col-5">
                     <span class="wd-bold-text"
-                      >C Sharp <i class="fa-solid fa-circle-check"></i><br
+                      >CSharp <i class="fa-solid fa-circle-check"></i><br
                     /></span>
                     @CSharp
                   </div>
@@ -324,7 +350,7 @@
                   </div>
                   <div class="col-5">
                     <span class="wd-bold-text"
-                      >Neuralink <i class="fa-solid fa-circle-check"></i><br
+                      >NeuraL <i class="fa-solid fa-circle-check"></i><br
                     /></span>
                     @neuralink
                   </div>
