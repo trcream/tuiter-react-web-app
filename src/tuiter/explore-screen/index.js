@@ -26,22 +26,19 @@ function ExploreScreenJS() {
       </div>
       <ul className="nav nav-pills mb-2 mt-2">
         <li className="nav-item">
-          {/* <a href="#" className="nav-link active">
+          <a href="#" className="nav-link active">
             For You
-          </a> */}
-          <button className="nav-link active">For You</button>
+          </a>
         </li>
         <li className="nav-item">
-          {/* <a href="#" className="nav-link">
+          <a href="#" className="nav-link">
             Trending
-          </a> */}
-          <button className="nav-link">Trending</button>
+          </a>
         </li>
         <li className="nav-item">
-          {/* <a href="#" className="nav-link">
+          <a href="#" className="nav-link">
             News
-          </a> */}
-          <button className="nav-link">News</button>
+          </a>
         </li>
       </ul>
       <div className="position-relative mb-2">
