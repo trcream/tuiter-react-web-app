@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addTodo } from "./reducers/todos-reducer";
+import { addTodo, deleteTodo, todoDoneToggle } from "./reducers/todos-reducer";
 
 const Todos = () => {
   // Access the todos state from the store
@@ -10,6 +10,16 @@ const Todos = () => {
 
   // Access the dispatch function
   const dispatch = useDispatch();
+
+  const toggleTodoDone = (todo) => {
+    dispatch(todoDoneToggle(todo));
+  };
+
+  // dispatching the data to store where the delete reducer will update the state
+  const deleteTodoClickHandler = (index) => {
+    dispatch(deleteTodo(index));
+  };
+
   // Handle the click event for the create todo button
   const createTodoClickHandler = () => {
     // Dipatch the addtodo action to the store to update the state with the new todo
@@ -45,11 +55,27 @@ const Todos = () => {
           <input
             onChange={todoChangeHandler}
             value={todo.do}
-            className="form-control"
+            className="form-control  w-75"
           />
         </li>
-        {todos.map((todo) => (
-          <li className="list-group-item">{todo.do}</li>
+        {todos.map((todo, index) => (
+          <li key={todo._id} className="list-group-item">
+            <button
+              onClick={() => deleteTodoClickHandler(index)}
+              className="btn btn-danger 
+                      float-end ms-2"
+            >
+              Delete
+            </button>
+            <input
+              type="checkbox"
+              className="me-2"
+              checked={todo.done}
+              onChange={() => toggleTodoDone(todo)}
+            />
+
+            {todo.do}
+          </li>
         ))}
       </ul>
     </>
