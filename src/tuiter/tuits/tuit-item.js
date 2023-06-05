@@ -16,7 +16,7 @@ const TuitItem = ({ tuit }) => {
         <div className="col-1">
           <img
             width={50}
-            className="rounded-circle"
+            className="rounded-circle ratio"
             src={`/images/${tuit.image}`}
             alt="Tuit Item"
           />

@@ -41,7 +41,6 @@ function Tuiter() {
             {/* <ExploreScreenJS /> */}
           </div>
           <div className="col-3">
-            <h1>Who to follow</h1>
             <WhoToFollowList />
           </div>
         </div>

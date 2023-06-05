@@ -7,7 +7,7 @@ const WhoToFollowListItem = ({
       <div className="row">
         <div className="col-2">
           <img
-            className="rounded-circle"
+            className="rounded-circle ratio-1x1 "
             height={48}
             width={48}
             mx-2

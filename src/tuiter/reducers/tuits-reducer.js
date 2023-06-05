@@ -10,7 +10,7 @@ const currentUser = {
 
 const templateTuit = {
   ...currentUser,
-  // title: "",
+  title: "this should work",
   topic: "Space",
   time: "2h",
   liked: false,
@@ -32,9 +32,13 @@ const tuitsSlice = createSlice({
       state.tuits.splice(index, 1);
     },
     createTuit(state, action) {
+      console.log("TESTING action.payload", action.payload);
       state.tuits.unshift({
         ...action.payload,
         ...templateTuit,
+        // Updated to reflect what the user is inputing
+        // This is really title data although we ar just calling it tuit data
+        title: action.payload.tuit,
 
         // Generate a unique id for the tuit
         _id: new Date().getTime(),
