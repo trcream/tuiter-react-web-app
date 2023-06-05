@@ -3,6 +3,7 @@ import HelloWorld from "./labs/a3/hello-world";
 import Tuiter from "./tuiter";
 import { BrowserRouter, Navigate } from "react-router-dom";
 import { Routes, Route } from "react-router";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 function App() {
   return (
