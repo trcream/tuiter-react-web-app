@@ -14,7 +14,8 @@ const TuitSummaryItem = ({
       <div className="row">
         <div className="col-10">
           <div>
-            {tuit.userName} . {tuit.time}
+            {/* {tuit.userName} . {tuit.time} */}
+            {tuit.username} . {tuit.time}
           </div>
           <div className="fw-bolder">{tuit.topic}</div>
           <div>{tuit.title}</div>

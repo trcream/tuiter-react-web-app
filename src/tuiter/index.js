@@ -17,7 +17,10 @@ import tuitsReducer from "./reducers/tuits-reducer";
 
 // who is the name of the key and whoReducer is the value which is a function
 const store = configureStore({
-  reducer: { who: whoReducer, tuits: tuitsReducer },
+  reducer: {
+    who: whoReducer,
+    tuits: tuitsReducer,
+  },
 });
 function Tuiter() {
   return (
