@@ -9,7 +9,9 @@ import { BiBold, BiItalic } from "react-icons/bi";
 import { FiBarChart2 } from "react-icons/fi";
 
 //  importing the create tuit reducer
-import { createTuit, deleteTuit } from "./reducers/tuits-reducer";
+// import { createTuit, deleteTuit } from "./reducers/tuits-reducer";
+import { createTuitThunk } from "./services/tuits-thunks";
+
 // Used to dispatch actions to the store
 import { useDispatch } from "react-redux";
 
@@ -21,7 +23,7 @@ const WhatsHappening = () => {
     const newTuit = {
       tuit: whatsHappening,
     };
-    dispatch(createTuit(newTuit));
+    dispatch(createTuitThunk(newTuit));
     setWhatsHappening("");
   };
   return (
