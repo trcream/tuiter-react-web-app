@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+// import { useSelector } from "react-redux";
+// const { currentUser } = useSelector((state) => state.user);
 
 function Nav() {
   return (
@@ -14,6 +16,18 @@ function Nav() {
       </Link>
       <Link className="nav-link" to="/tuiter">
         Tuiter
+      </Link>
+
+      <Link className="nav-link" to="/login">
+        Login
+      </Link>
+
+      <Link className="nav-link" to="/register">
+        Register
+      </Link>
+
+      <Link className="nav-link" to="/profile">
+        Profile
       </Link>
     </nav>
   );

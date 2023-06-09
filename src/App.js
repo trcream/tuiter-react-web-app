@@ -4,6 +4,9 @@ import Tuiter from "./tuiter";
 import { BrowserRouter, Navigate } from "react-router-dom";
 import { Routes, Route } from "react-router";
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import ProfileScreen from "./tuiter/user/profile-screen";
+import LoginScreen from "./tuiter/user/login-screen";
+import RegisterScreen from "./tuiter/user/register-screen";
 
 function App() {
   return (
@@ -14,6 +17,9 @@ function App() {
           <Route path="/labs/*" element={<Labs />} />
           <Route path="/hello" element={<HelloWorld />} />
           <Route path="/tuiter/*" element={<Tuiter />} />
+          <Route path="/profile" element={<ProfileScreen />} />
+          <Route path="/login" element={<LoginScreen />} />
+          <Route path="/register" element={<RegisterScreen />} />
         </Routes>
       </div>
     </BrowserRouter>

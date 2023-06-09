@@ -5,7 +5,7 @@ const WhoToFollowListItem = ({
   return (
     <li className="list-group-item">
       <div className="row">
-        <div className="col-2">
+        <div className="col-lg-2 col-sm-1">
           <img
             className="rounded-circle ratio-1x1 "
             height={48}
@@ -14,11 +14,11 @@ const WhoToFollowListItem = ({
             src={`/images/${who.avatarIcon}`}
           />
         </div>
-        <div className="col-8">
+        <div className="col-lg-8 col-sm-11">
           <div className="fw-bold">{who.userName}</div>
           <div>@{who.handle}</div>
         </div>
-        <div className="col-2">
+        <div className="col-lg-2">
           <button className="btn btn-primary rounded-pill float-end">
             Follow
           </button>
