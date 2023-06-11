@@ -37,6 +37,7 @@ function ProfileScreen() {
       {profile && (
         <div>
           <div>
+            <h4> Current User: {profile.username}</h4>
             <label>First Name</label>
             <input
               type="text"
