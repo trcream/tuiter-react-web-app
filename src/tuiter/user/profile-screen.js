@@ -8,16 +8,29 @@ import {
 } from "../services/auth-thunks";
 function ProfileScreen() {
   const { currentUser } = useSelector((state) => state.user);
+  console.log("current user is: ", currentUser);
+
   const [profile, setProfile] = useState(currentUser);
+  console.log("current profile is: ", profile);
+
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const save = () => {
+    // Sending the updated profile to thunk which wraps the service call to the server
     dispatch(updateUserThunk(profile));
   };
-  useEffect(async () => {
-    const { payload } = await dispatch(profileThunk());
-    setProfile(payload);
+  useEffect(() => {
+    const fetchData = async () => {
+      const { payload } = await dispatch(profileThunk());
+      setProfile(payload);
+    };
+    fetchData();
   }, []);
+
+  // useEffect(async () => {
+  //   const { payload } = await dispatch(profileThunk());
+  //   setProfile(payload);
+  // }, []);
   return (
     <div>
       <h1>Profile Screen</h1>
