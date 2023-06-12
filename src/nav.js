@@ -20,6 +20,24 @@ function Nav() {
         Tuiter
       </Link>
 
+      {/* {!currentUser && (
+        <Link className="list-group" to="/tuiter/login">
+          {" "}
+          Login{" "}
+        </Link>
+      )}
+      {!currentUser && (
+        <Link className="list-group" to="/tuiter/register">
+          Register
+        </Link>
+      )}
+      {currentUser && (
+        <Link className="list-group" to="/tuiter/profile">
+          {" "}
+          Profile{" "}
+        </Link>
+      )} */}
+
       <Link className="nav-link" to="/login">
         Login
       </Link>
