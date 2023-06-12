@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router";
+import store from "../store";
 import {
   profileThunk,
   logoutThunk,
@@ -15,7 +16,11 @@ function ProfileScreen() {
 
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const save = () => {
+  const save = async () => {
+    // await dispatch(updateUserThunk(profile));
+    // const { payload } = await dispatch(profileThunk());
+    // setProfile(payload);
+
     // Sending the updated profile to thunk which wraps the service call to the server
     dispatch(updateUserThunk(profile));
     // Updating the profile state with the updated profile
@@ -26,7 +31,7 @@ function ProfileScreen() {
   useEffect(() => {
     const fetchData = async () => {
       const { payload } = await dispatch(profileThunk());
-      console.log(payload);
+      console.log("use effect payload" + payload);
       setProfile(payload);
     };
     fetchData();
@@ -36,7 +41,7 @@ function ProfileScreen() {
   //   const { payload } = await dispatch(profileThunk());
   //   setProfile(payload);
   // }, []);
-  console.log(profile);
+  // console.log(profile);
   return (
     <div className="row">
       <div>

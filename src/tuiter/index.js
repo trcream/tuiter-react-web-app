@@ -11,20 +11,18 @@ import WhoToFollowList from "./who-to-follow-list";
 import ExploreScreenJS from "./explore-screen";
 import HomeScreenJS from "./home-screen";
 
-import { configureStore } from "@reduxjs/toolkit";
 import { Provider } from "react-redux";
-import whoReducer from "./reducers/who-reducer";
-import tuitsReducer from "./reducers/tuits-reducer";
-import authReducer from "./services/auth-reducer";
+
+import store from "./store";
 
 // who is the name of the key and whoReducer is the value which is a function
-const store = configureStore({
-  reducer: {
-    who: whoReducer,
-    tuits: tuitsReducer,
-    user: authReducer,
-  },
-});
+// const store = configureStore({
+//   reducer: {
+//     who: whoReducer,
+//     tuits: tuitsReducer,
+//     user: authReducer,
+//   },
+// });
 function Tuiter() {
   return (
     // providing the store to the rest of the app
