@@ -26,7 +26,8 @@ export const profile = async () => {
 };
 export const updateUser = async (user) => {
   console.log("updateUser service called " + user._id);
-  const response = await api.put(`${USERS_URL}/${user._id}`, user);
+  // const response = await api.put(`${USERS_URL}/${user._id}`, user);
+  const response = await api.put(`${USERS_URL}/update/${user._id}`, user);
   console.log(`${USERS_URL}/${user._id}`);
   return response.data;
 };

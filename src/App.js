@@ -8,16 +8,8 @@ import ProfileScreen from "./tuiter/user/profile-screen";
 import LoginScreen from "./tuiter/user/login-screen";
 import RegisterScreen from "./tuiter/user/register-screen";
 import { Provider } from "react-redux";
-import authReducer from "./tuiter/services/auth-reducer";
-import { configureStore } from "@reduxjs/toolkit";
 
-// import store from "./tuiter/store";
-
-const store = configureStore({
-  reducer: {
-    user: authReducer,
-  },
-});
+import store from "./tuiter/store";
 
 function App() {
   return (
