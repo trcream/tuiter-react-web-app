@@ -15,12 +15,14 @@ import { configureStore } from "@reduxjs/toolkit";
 import { Provider } from "react-redux";
 import whoReducer from "./reducers/who-reducer";
 import tuitsReducer from "./reducers/tuits-reducer";
+import authReducer from "./services/auth-reducer";
 
 // who is the name of the key and whoReducer is the value which is a function
 const store = configureStore({
   reducer: {
     who: whoReducer,
     tuits: tuitsReducer,
+    user: authReducer,
   },
 });
 function Tuiter() {
@@ -36,13 +38,11 @@ function Tuiter() {
           </div>
           <div className="col-7">
             <Routes>
-              {/* <Route path="/home" element={<HomeScreen />} /> */}
               <Route path="/home" element={<HomeScreenJS />} />
               <Route path="/explore" element={<ExploreScreenJS />} />
               <Route path="/bookmarks" element={<BookmarksScreen />} />
               <Route path="/profile" element={<ProfileScreen />} />
             </Routes>
-            {/* <ExploreScreenJS /> */}
           </div>
           <div className="col-3">
             <WhoToFollowList />

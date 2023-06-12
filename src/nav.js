@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 function Nav() {
-  // const { currentUser } = useSelector((state) => state.user);
+  const { currentUser } = useSelector((state) => state.user);
   // alert(`current user is: ${currentUser}`);
 
   return (
@@ -19,36 +19,32 @@ function Nav() {
       <Link className="nav-link" to="/tuiter">
         Tuiter
       </Link>
-
-      {/* {!currentUser && (
-        <Link className="list-group" to="/tuiter/login">
+      {!currentUser && (
+        <Link className="nav-link" to="/tuiter/login">
           {" "}
           Login{" "}
         </Link>
       )}
       {!currentUser && (
-        <Link className="list-group" to="/tuiter/register">
+        <Link className="nav-link" to="/tuiter/register">
           Register
         </Link>
       )}
       {currentUser && (
-        <Link className="list-group" to="/tuiter/profile">
+        <Link className="nav-link" to="/tuiter/profile">
           {" "}
           Profile{" "}
         </Link>
-      )} */}
-
-      <Link className="nav-link" to="/login">
+      )}
+      {/* <Link className="nav-link" to="/tuiter/login">
         Login
       </Link>
-
-      <Link className="nav-link" to="/register">
+      <Link className="nav-link" to="/tuiter/register">
         Register
       </Link>
-
-      <Link className="nav-link" to="/profile">
+      <Link className="nav-link" to="/tuiter/profile">
         Profile
-      </Link>
+      </Link>{" "} */}
     </nav>
   );
 }
