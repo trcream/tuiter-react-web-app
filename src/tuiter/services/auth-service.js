@@ -4,7 +4,7 @@
 import axios from "axios";
 const SERVER_API_URL = process.env.REACT_APP_SERVER_API_URL;
 // const SERVER_API_URL = "http://localhost:4000/api";
-alert(SERVER_API_URL);
+// alert(SERVER_API_URL);
 
 const USERS_URL = `${SERVER_API_URL}/users`;
 
