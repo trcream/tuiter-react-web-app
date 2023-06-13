@@ -10,7 +10,7 @@ const WhoToFollowListItem = ({
             className="rounded-circle ratio-1x1 "
             height={48}
             width={48}
-            mx-2
+            mx={2}
             src={`/images/${who.avatarIcon}`}
           />
         </div>

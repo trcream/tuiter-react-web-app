@@ -10,10 +10,10 @@ const TuitStats = ({ tuit }) => {
   return (
     <div className="row">
       <div className="col-2 mt-2">
-        <i class="fa-regular fa-comment mx-1"></i> {tuit.replies}
+        <i className="fa-regular fa-comment mx-1"></i> {tuit.replies}
       </div>
       <div className="col-3 mt-2">
-        <i class="fa-solid fa-retweet mx-1"></i>
+        <i className="fa-solid fa-retweet mx-1"></i>
         {tuit.retuits}
       </div>
       <div className="col-2 mt-2">
@@ -36,7 +36,7 @@ const TuitStats = ({ tuit }) => {
         <span className="ms-2">{tuit.dislikes}</span>
       </div>
       <div className="col-2 mt-2">
-        <i class="fa-solid fa-arrow-up-from-bracket"></i>
+        <i className="fa-solid fa-arrow-up-from-bracket"></i>
       </div>
     </div>
   );
