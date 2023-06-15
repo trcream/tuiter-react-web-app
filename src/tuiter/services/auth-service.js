@@ -6,14 +6,14 @@ import axios from "axios";
 // const SERVER_API_URL =
 //   "https://tuiter-node-server-app-trcream.herokuapp.com/api/";
 
-const SERVER_API_URL = "https://tuiter-node-server-app-7ua3.onrender.com/api/";
+// const SERVER_API_URL = "https://tuiter-node-server-app-7ua3.onrender.com/api/";
 
-// const SERVER_API_URL = "http://localhost:4000/api/";
+const SERVER_API_URL = "http://localhost:4000/api/";
 
 // const USERS_URL = `${SERVER_API_URL}/users`;
 const USERS_URL = `${SERVER_API_URL}users`;
 
-alert("Users Url:" + USERS_URL);
+// alert("Users Url:" + USERS_URL);
 
 const api = axios.create({
   baseURL: SERVER_API_URL,
@@ -39,6 +39,7 @@ export const profile = async () => {
 export const updateUser = async (user) => {
   console.log("updateUser service called " + user._id);
   // const response = await api.put(`${USERS_URL}/${user._id}`, user);
+  //dispatch here?
   const response = await api.put(`${USERS_URL}/update/${user._id}`, user);
   console.log(`${USERS_URL}/${user._id}`);
   return response.data;

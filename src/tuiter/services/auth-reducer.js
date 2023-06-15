@@ -30,7 +30,7 @@ const authSlice = createSlice({
     },
     [loginThunk.fulfilled]: (state, { payload }) => {
       // alert("login state.currentUser update getting called here");
-      console.log(payload);
+      // console.log(payload);
       state.currentUser = payload;
     },
   },
