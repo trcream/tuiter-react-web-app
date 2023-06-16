@@ -1,10 +1,13 @@
 import axios from "axios";
-// const API_BASE =
-//   "https://tuiter-node-server-app-trcream.herokuapp.com/api/tuits";
 
-const API_BASE = process.env.REACT_APP_API_BASE;
+// const API_BASE = process.env.REACT_APP_API_BASE;
 // const API_BASE = "https://tuiter-node-server-app-7ua3.onrender.com/api";
-const TUITS_API = "http://localhost:4000/api/tuits";
+// const TUITS_API = "http://localhost:4000/api/tuits";
+
+// Updating for hw6 to work from heroku
+const TUITS_API =
+  "https://trcream-tuiter-node-server-app.herokuapp.com/api/tuits/";
+
 // const TUITS_API = `${API_BASE}/tuits`;
 // alert(TUITS_API);
 
