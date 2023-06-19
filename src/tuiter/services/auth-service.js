@@ -17,7 +17,7 @@ const SERVER_API_URL = "https://tuiter-node-server-app-7ua3.onrender.com/api/";
 // const USERS_URL = `${SERVER_API_URL}/users`;
 const USERS_URL = `${SERVER_API_URL}users`;
 
-// alert("Users Url:" + USERS_URL);
+alert("Users Url:" + USERS_URL);
 
 const api = axios.create({
   baseURL: SERVER_API_URL,
