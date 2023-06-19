@@ -8,7 +8,7 @@ import axios from "axios";
 // const TUITS_API =
 //   "https://trcream-tuiter-node-server-app.herokuapp.com/api/tuits/";
 
-const TUITS_API = "https://tuiter-node-server-app-7ua3.onrender.com/api/tuits/";
+const TUITS_API = "https://tuiter-node-server-app-7ua3.onrender.com/api/tuits";
 
 // const TUITS_API = `${API_BASE}/tuits`;
 // alert(TUITS_API);
